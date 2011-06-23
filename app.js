@@ -31,7 +31,7 @@ app = express.createServer()
 
 mongoose = require('mongoose')
 Schema = mongoose.Schema
-db = mongoose.connect('mongodb://localhost/boatbook')
+db = mongoose.connect('mongodb://localhost/default')
 
 
 /**********************************************************************
@@ -163,7 +163,7 @@ require('./controllers/nowjs')
 
 // Create a server with a specific host/port
 mongolian = new Mongolian({ keepAlive:15000 })
-db3 = mongolian.db('boatbook')
+db3 = mongolian.db('default')
 gridfs = db3.gridfs()
 //console.log(gridfs.files);
 
