@@ -1,0 +1,13 @@
+#img
+	- if (!session.user.picture)
+		#editBox
+			a(href='#edit') Edit Photo
+		img(src='/profiles/profileDefault.jpg', width='100%', height='auto', style='border-bottom: 5px solid white')
+	- else
+		#editBox
+			a(href='#edit') Edit Photo
+		img(src='/profiles/'+session.user.picture, width='100%', height='auto', style='border-bottom: 5px solid white')
+#title
+	h2=session.user.firstName+' '+initial 
+	p
+		a(href='/user/edit') Edit Profile

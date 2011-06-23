@@ -1,0 +1,844 @@
+@import 'nib/gradients'
+
+border-radius()
+	-webkit-border-radius arguments
+	-moz-border-radius arguments
+	-0-border-radius arguments
+	border-radius arguments
+
+background-size()
+	-webkit-background-size arguments
+	-moz-background-size arguments
+	background-size arguments
+	-0-background-size arguments
+	
+box-shadow()
+	-moz-box-shadow arguments
+	-webkit-box-shadow arguments
+	box-shadow arguments
+	-0-box-shadow arguments
+
+transition()
+	-moz-transition arguments
+	-webkit-transition arguments
+	transition arguments
+	-0-transition arguments
+
+h1
+	font-weight 300
+
+body 
+	font-family Verdana, Helvetica, Arial, Sans-Serif
+	margin 0 
+	padding 0
+	background-image url('/img/orange-noise.jpg')
+	p
+		margin 0
+		padding 0
+
+#labelEmail
+	position absolute
+	margin 10px
+	font-size 20px
+	background white
+	width 100px
+
+#labelPass
+	position absolute
+	margin 10px
+	font-size 20px
+	background white
+	width 100px
+
+input
+	height 40px
+	width 500px
+	font-size 20px
+	
+button
+	height 40px
+	width 100px
+	font-size 20px
+	
+#passwordFill
+	display none
+
+#main
+	width 1000px
+	margin-left auto
+	margin-right auto
+	margin-top 10px
+	a
+		color #1A5AC5
+
+/*********************************      New      *********************************/
+
+#navContainer
+	width 100%
+	50px
+	#navLogo
+		height 100%
+		margin-top 10px
+		float left
+		display block
+		width 60%
+		#logo
+			float left
+			margin-right 10px
+			font-size 25px
+			font-family 'Francois One', helvetica, aria, sans-serif
+			text-shadow 0px -1px 0 #ad7600
+			line-height 37px
+			text-align center
+			width 160px
+			height 40px
+			display block
+			border 1px solid #eb8500
+			box-shadow 0px 2px 2px lightgrey, 0px 0px 0 rgba(0, 0, 0, 1)
+			background linear-gradient(bottom, #ffa500, 70% #ffbd2e)
+			color white
+			border-radius 5px
+			&:hover
+				border 1px solid #e15118
+				cursor pointer
+				transition 0.1s ease-in
+				margin-top 3px
+			&:active
+				background linear-gradient(bottom, #ffbd2e, 70% #ffa500)
+			#img
+				padding-left 5px
+				padding-top 4px
+				float left
+				display block
+				height 32px
+				width 32px
+			#word
+				padding-left 10px
+				float left
+				display block
+		#sideright
+			margin-right 10px
+			float left
+			font-size 25px
+			font-family 'Francois One', helvetica, aria, sans-serif
+			text-shadow 0px -1px 0 #1b77b8
+			line-height 37px
+			text-align center
+			width 160px
+			height 40px
+			display block
+			border 1px solid #1b77b8
+			box-shadow 0px 2px 2px lightgrey, 0px 0px 0 rgba(0, 0, 0, 1)
+			background linear-gradient(bottom, #5a9cca, 70% #6bb9f0)
+			color white
+			border-radius 5px
+			&:hover
+				border 1px solid #185f92
+				cursor pointer
+				transition 0.1s ease-in
+				margin-top 3px
+			&:active
+				background linear-gradient(bottom, #6bb9f0, 70% #5a9cca)
+			#img
+				padding-left 5px
+				padding-top 4px
+				float left
+				display block
+				height 32px
+				width 32px
+			#word
+				padding-left 4px
+				float left
+				display block
+		#sideleft
+			float left
+			font-size 25px
+			font-family 'Francois One', helvetica, aria, sans-serif
+			text-shadow 0px -1px 0 #5eb350
+			line-height 37px
+			text-align center
+			width 160px
+			height 40px
+			display block
+			border 1px solid #5eb350
+			box-shadow 0px 2px 2px lightgrey, 0px 0px 0 rgba(0, 0, 0, 1)
+			background linear-gradient(bottom, #6aca5a, 70% #67e36a)
+			color white
+			border-radius 5px
+			&:hover
+				border 1px solid #509845
+				cursor pointer
+				transition 0.1s ease-in
+				margin-top 3px
+			&:active
+				background linear-gradient(bottom, #67e36a, 70% #6aca5a)
+			#img
+				padding-left 5px
+				padding-top 4px
+				float left
+				display block
+				height 32px
+				width 32px
+			#word
+				padding-left 4px
+				float left
+				display block
+	#navLinks
+		padding-top 10px
+		text-align right
+		float right
+		display block
+		width 40%
+		#navUl
+			list-style none
+			display inline
+			li	
+				padding-top 15px
+				height 33px
+				font-size 12px
+				float right
+				padding-right 0px
+				padding-left 15px
+				a
+					text-decoration none
+					color #1a5ac5
+				a:hover
+					text-decoration underline
+			.dash
+				background-image url('/img/dash.png')
+				background-repeat no-repeat
+				background-position 0.4em
+			.inbox
+				background-image url('/img/inbox.png')
+				background-repeat no-repeat
+				background-position 0.4em
+				padding-left 37px
+				padding-right 12px
+			.settings
+				background-image url('/img/settings.png')
+				background-repeat no-repeat
+				background-position 0.4em
+				padding-left 39px
+				padding-right 12px
+			.logout
+				padding-right 0px
+				background-image url('/img/logout.png')
+				background-repeat no-repeat
+				background-position 0.4em
+				padding-left 37px
+#homeContainer
+	margin-top 24px
+	margin-bottom 150px
+	width auto
+	height auto
+	border-radius 4px
+	overflow hidden
+	#sideRight
+		padding-right 4px
+		background-image url('/img/orange-noise.jpg')
+		display block
+		float right
+		width 240px
+		height auot
+		overflow hidden
+		#profilePicContainer
+			margin-left 10px
+			border 5px solid white
+			box-shadow 0 5px 5px rgba(0, 0, 0, 0.1)
+			border-radius 0px
+			display block
+			height auto
+			width 91%
+			background-image url('/img/grey-noise.jpg')
+			margin-bottom 40px
+			#img
+				display block
+				height auto
+				width auto
+				position relative
+				z-index 100
+				&:hover
+					cursor pointer
+					#editBox
+						padding-top 12px
+						text-align center
+						display block
+						transition opacity .2s ease-in
+						opacity .5
+						height 35px
+					a
+						text-decoration none
+						color #47433b
+					a:hover
+						text-decoration underline
+
+				#editBox
+					display block
+					opacity 0
+					position absolute
+					width 220px
+					top 0px
+					height 35px
+					background-color white
+			#title
+				padding 
+				height 100px
+				display block
+				clear both
+				width 100%
+				color #47433b
+				padding 5px
+				padding-bottom 20px
+				h2
+					padding-left 12px
+					padding-top 0px
+					margin 0px
+					padding-bottom 7px
+					font-weight 350
+				p
+					padding-left 13px
+					padding-top 0px
+					margin 0px
+					a
+						text-decoration none
+					a:hover
+						text-decoration underline
+		#importantLinks
+			margin-left 10px
+			border 5px solid white
+			box-shadow 0 5px 5px rgba(0, 0, 0, 0.1)
+			margin-top 25px
+			float left
+			border-radius 0px
+			display block
+			height 100px
+			background-image url('/img/grey-noise.jpg')
+			width 91%
+			clear both
+		#importantStats
+			margin-left 10px
+			border 5px solid white
+			box-shadow 0 5px 5px rgba(0, 0, 0, 0.1)
+			margin-top 25px
+			float left
+			border-radius 0px
+			display block
+			height 100px
+			background-image url('/img/grey-noise.jpg')
+			width 91%
+			clear both
+			margin-bottom 40px
+		#extraBlock
+			margin-top 25px
+			float left
+			border-radius 0px
+			display block
+			height 100px
+			width 91%
+			clear both
+	#sideLeft
+		display block
+		float left
+		width 740px
+		height auto
+		color #47433b
+		h2
+			font-size 18px
+			padding-top 0px
+			margin 0px
+			padding-bottom 7px
+			font-weight 600
+
+		p
+			padding-top 10px
+			padding-bottom 10px
+			margin 0px
+			a
+				text-decoration none
+			a:hover
+				text-decoration underline
+		.dotter
+			border-bottom 1px dotted darkgrey
+		#miniNav
+			text-transform uppercase
+			width auto
+			margin-left 8px
+			margin-bottom 10px
+			padding 15px 0px 20px 2px
+			display block
+			height auto
+			a
+				background none 0 0 rgba(0, 0, 0, 0.1)
+				border-radius 4px 4px 4px 4px
+				box-shadow 0 1px 2px rgba(0, 0, 0, 0.2) inset
+				color #A3A19B
+				letter-spacing 0.1em
+				margin-right 16px
+				padding 3px 6px
+				text-decoration none
+			a:hover
+				background #62a4d3
+				color white
+				box-shadow 0 1px 2px rgba(0, 0, 0, 0.2)
+			.Selected
+				background #62a4d3
+				color white
+				border-radius 4px 4px 4px 4px
+				box-shadow 0 1px 2px rgba(0, 0, 0, 0.2)
+				letter-spacing 0.1em
+				margin-right 16px
+				padding 3px 6px
+				text-decoration none
+		#leftAlertContainer
+			margin-left 10px
+			margin-bottom 25px
+			padding 15px
+			border 5px solid white
+			box-shadow 0 5px 5px rgba(0, 0, 0, 0.1)
+			border-radius 0px
+			display block
+			min-height 50px
+			width auto
+			background-image url('/img/grey-noise.jpg')
+		#leftMsgContainer
+			margin-left 10px
+			margin-top 0px
+			padding 10px 15px 25px 15px
+			border 5px solid white
+			box-shadow 0 5px 5px rgba(0, 0, 0, 0.1)
+			border-radius 0px
+			display block
+			min-height 50px
+			width auto
+			background-image url('/img/grey-noise.jpg')
+	#listingsNew
+		display block
+		float left
+		width 995px
+		height auto
+		color #47433b
+		h2
+			font-size 18px
+			padding-top 0px
+			margin 0px
+			padding-bottom 7px
+			font-weight 600
+		p
+			padding-top 10px
+			padding-bottom 10px
+			margin 0px
+			a
+				text-decoration none
+			a:hover
+				text-decoration underline
+		.dotter
+			border-bottom 1px dotted darkgrey
+		#miniNav
+			text-transform uppercase
+			width auto
+			margin-left 8px
+			margin-bottom 10px
+			padding 15px 0px 20px 2px
+			display block
+			height auto
+			a
+				background none 0 0 rgba(0, 0, 0, 0.1)
+				border-radius 4px 4px 4px 4px
+				box-shadow 0 1px 2px rgba(0, 0, 0, 0.2) inset
+				color #A3A19B
+				letter-spacing 0.1em
+				margin-right 16px
+				padding 3px 6px
+				text-decoration none
+			a:hover
+				background #62a4d3
+				color white
+				box-shadow 0 1px 2px rgba(0, 0, 0, 0.2)
+			.Selected
+				background #62a4d3
+				color white
+				border-radius 4px 4px 4px 4px
+				box-shadow 0 1px 2px rgba(0, 0, 0, 0.2)
+				letter-spacing 0.1em
+				margin-right 16px
+				padding 3px 6px
+				text-decoration none
+		#mainContainer
+			margin-left 10px
+			margin-bottom 25px
+			padding 15px
+			border 5px solid white
+			box-shadow 0 5px 5px rgba(0, 0, 0, 0.1)
+			border-radius 0px
+			display block
+			min-height 50px
+			width auto
+			background-image url('/img/grey-noise.jpg')
+		#leftMsgContainer
+			margin-left 10px
+			margin-top 0px
+			padding 10px 15px 25px 15px
+			border 5px solid white
+			box-shadow 0 5px 5px rgba(0, 0, 0, 0.1)
+			border-radius 0px
+			display block
+			min-height 50px
+			width auto
+			background-image url('/img/grey-noise.jpg')
+			
+#backgroundBlock
+	background #333333
+	display none
+	height 100% !important
+	left 0
+	opacity .3
+	position fixed
+	top 0
+	width 100%
+	z-index 8999
+	
+#photoUploadBox
+	display none
+	background-image url('/img/grey-noise.jpg')
+	width 400px
+	height 200px
+	position fixed
+	top 100px
+	margin-left 335px
+	z-index 9000
+	border 5px solid white
+	box-shadow 0 3px 3px rgba(0, 0, 0, 0.3)
+	#closeUploadBox
+		display block
+		background black
+		height auto
+		weight auot
+		color white
+		
+
+#header 
+	height 50px
+	display block
+	padding-left 10px
+	padding-right 8px
+
+	
+#topBar
+	width 1000px
+	display block
+	margin auto
+	height 60px
+	font-weight 600
+	background none
+
+/*********************************      Navigation Boxes      *********************************/
+	
+
+.box
+	margin-right 0px
+	margin-left 0px
+
+	box-shadow 0px 4px 4px lightgrey
+	font-size 25px
+	font-family 'Arvo', arial, serif
+	font-weight 900
+	text-align center
+	color white
+	float right
+	background-color #ff9600
+	width auto
+	display block
+	transition padding 0.2s ease-in
+	& a
+		padding 10px 15px 10px 15px
+		display block
+		color white
+		text-decoration none
+	&:hover	
+		padding-top 10px
+		display block
+		background-color #4985D6
+		cursor pointer
+		border-bottom dotted 4px white
+
+
+
+	
+#trait-logo
+	background-color #ff9600
+	margin-left 10px
+	float left
+#trait-search
+	background-color #39d55a
+#trait-rendezvous
+	background-color #e62929
+#trait-rendezvous
+	background-color #a200ff
+#trait-inbox
+	background-color #40a1f0
+#trait-profile
+	background-color #e62424
+#trait-settings
+	background-color #41e4b8
+	font-size 14px
+#trait-logout
+	background-color #dc3b9a
+	font-size 14px
+
+	
+/*********************************      Navigation Boxes End      *********************************/
+
+#container-outside
+	width 100%
+	overflow hidden
+	height auto
+	background-color white
+
+#frontPage
+	margin-top 50px
+	width 100%
+	height auto
+	display block
+	background none
+	overflow hidden
+
+#container-main
+	width 1000px
+	overflow hidden
+	height 600px
+	margin auto	
+	#container-top
+		clear both
+		height 90px
+		width 100%
+		display block
+		#facebook
+			margin-right auto
+			margin-left auto
+			padding-top 20px
+			width 250px
+			height 50px
+	#container-left 
+		float left
+		width 45%
+		height 100%
+		background-color none
+	#container-right 
+		height 100%
+		background-color none
+		float right
+		width 45%
+		#loginPicContainer
+			padding-top 90px
+			padding-left 60px
+			height auto
+			width auto
+			display block
+			#profilePic
+				display block
+				float left
+				clear both
+			#profileName
+				display block
+				float left
+				clear both
+
+#user
+	float left
+	margin 10px
+	padding 10px
+	display block
+	
+#settings
+	float left
+	margin 10px
+	padding 10px
+	display block
+	
+#logout
+	margin 10px
+	padding 10px
+	float left
+	display block
+	
+#warn 
+	background-color #fdd
+	padding 1em
+	border 1px solid red
+	display block
+	clear both
+	
+
+	
+/*********************************      Top Navigation      *********************************/
+	
+#navBar
+	width 100%
+	float right
+	clear both
+	background-color white
+	
+#block-right
+	width 23%
+	height 80px
+	text-align right
+	float right
+	display block
+	padding-right 10px
+	
+#block-center
+	padding-right 10px
+	width 58%
+	height 80px
+	text-align center
+	float right
+	display block
+	#block-center-container
+		display block
+		width 100%
+		height 100%
+		overflow hidden
+		margin auto
+		
+#block-left
+	width 15%
+	height 80px
+	float left
+	display block
+	
+.navLinks
+	display block
+	float left
+	margin 10px
+	padding 10px
+/*********************************      Picture Ads      *********************************/
+	
+#picture-rotation
+	height 80px
+
+	display block
+	clear both
+	
+/*********************************      Search Area      *********************************/
+
+#search-container
+	display block
+	height 100%
+
+	clear both
+	
+/*********************************      Profile Area      *********************************/
+
+#profile-container
+	display block
+	height 100%
+	margin-right 10px
+	margin-left 10px
+	clear both
+	overflow hidden
+
+#photos-container
+	display block
+	height auto
+	width 100%
+
+
+#photos
+	display block
+	float left
+	height auto
+	width auto
+	padding 5px
+	border 1px solid lightlbue
+	
+#upload-container
+	display block
+	clear both
+	height auto
+	width auto
+
+#picture-container
+	width 21%
+	height auto
+	padding-right 30px
+	text-align left
+	float left
+	display block
+	#picture-block
+		display block
+		clear both
+		overflow hidden
+	#link-block
+		display block
+		clear both
+
+#profile-info-container
+	width 50%
+	height auto
+	text-align left
+	float left
+	display block
+	& h1 
+		margin-bottom 5px
+		font-weight 300
+
+#profile-features-container
+	height auto
+	width 25%
+	text-align left
+	float left
+	display block
+	
+.profile-info-boxes
+	padding 10px
+	display block
+	width 45%
+	height auto
+	float left
+	
+.profile-main-blocks
+	display block
+	width: 100%
+	height auto
+	padding 10px
+	h3 
+		font-weight 300
+		display inline
+		clear left
+		color darkorange
+	a 
+		font-size 12px
+		color blue
+	p
+		color grey
+		font-size 12px
+	.traits
+		color black
+
+
+#profileSpans
+	padding 10px
+	width 95%
+	display block
+	background-color lightgreen
+	overflow hidden
+	border-radius 5px
+	h3
+		font-weight 300
+		color darkgreen
+	p
+		font-size 12px
+		color darkgreen
+	#about
+		width 95%
+		height 160px
+		font-family Verdana, Helvetica, Arial, Sans-Serif
+		font-size 12px
+		padding 5px
+
+#submit-button
+	display block
+	width: 50%
+	height auto
+	float left
+	margin auto

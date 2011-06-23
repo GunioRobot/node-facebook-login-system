@@ -1,0 +1,8 @@
+h1 Reset Password
+form(action='/settings/resetPass', method='POST', {user: user})
+	p
+		label(for='user_email') E-mail:
+		input(type='text', name='user[email]', id='user.email')
+	p
+		input(type='submit')
+

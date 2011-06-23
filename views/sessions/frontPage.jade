@@ -1,0 +1,31 @@
+#frontPage
+	#topBar
+
+	#container-main
+		#container-top
+			#facebook
+				div#facebook_login(style='position:relative;float:right;width:200px;padding-top:10px;')
+					div#fb-login.fb_button(style='float:left; background-position: left -188px')                
+						a.fb_button_medium(href='/auth/facebook')
+							span#fb_login_text.fb_button_text Connect with Facebook
+		#container-left
+			- if (flash.warn)
+				p#warn= flash.warn
+			h1 Login
+			form(action='/sessions', method='POST')
+				p
+					label(for='email') Email
+					input(type='text', name='email', id='email', autocomplete='off')
+				p
+					label(for='password') Password
+					input(type='password', name='password', id='password', value='')
+				p
+					input(type='submit')
+			#forgetPass
+				a(href='/settings/resetPass') Reset Password 
+				p
+					a(href='/register') Register
+		#container-right
+			#loginPicContainer
+				#profilePic
+				#profileName

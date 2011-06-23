@@ -1,0 +1,17 @@
+h1 Edit Settings
+
+form(action='/settings/edit', method='POST')
+	p
+		label(for='user_name') First Name:
+	p
+		input(type='text', id='user_firstName', name='user[firstName]', value=user.firstName)
+	p
+		label(for='user_name') Last Name:
+	p
+		input(type='text', id='user_lastName', name='user[lastName]', value=user.lastName)
+	p
+		label(for='user_name') School:
+	p
+		input(type='text', id='user_school', name='user[school]', value=user.school)	
+	p
+		input(type='submit')

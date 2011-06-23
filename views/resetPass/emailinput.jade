@@ -1,0 +1,7 @@
+h1 Reset Your Password
+form(action='/settings/resetPass/complete', method='POST', {user: user})
+	p
+		label(for='user_password') Password:
+		input(type='password', name='user[password]', id='user.password')
+	p
+		input(type='submit')
